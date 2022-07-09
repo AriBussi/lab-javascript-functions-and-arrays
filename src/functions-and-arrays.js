@@ -1,6 +1,6 @@
 // Iteration #1: Find the maximum
 function maxOfTwoNumbers(a, b) {
-  if(a > b) {
+  if (a > b) {
     return a;
   } else {
     return b;
@@ -17,8 +17,8 @@ const words = ['mystery', 'brother', 'aviator', 'crocodile', 'pearl', 'orchard',
 function findLongestWord(wordsArr) {
   let longest = '';
 
-  wordsArr.forEach(function(word) {
-    if(word.length > longest.length) {
+  wordsArr.forEach(function (word) {
+    if (word.length > longest.length) {
       longest = word;
     }
   })
@@ -52,7 +52,7 @@ const mixedArr = [6, 12, 'miami', 1, true, 'barca', '200', 'lisboa', 8, 10];
 function sum(arr) {
   let sum = 0;
 
-  arr.forEach(function(element) {
+  arr.forEach(function (element) {
     if (typeof element === 'string') {
       sum += element.length;
     } else {
@@ -86,9 +86,9 @@ function averageWordLength(words) {
   const suma = sum(words);
 
   return suma / words.length;
- }
+}
 
- console.log('String average --', averageWordLength(wordsArr));
+console.log('String average --', averageWordLength(wordsArr));
 
 // Bonus - Iteration #4.1
 
@@ -102,6 +102,7 @@ function avg(arr) {
 }
 
 console.log('Generic average --', avg(mixedArr));
+
 // Iteration #5: Unique arrays
 const wordsUnique = [
   'crab',
@@ -117,14 +118,14 @@ const wordsUnique = [
   'bring'
 ];
 
-function uniquifyArray() {}
+function uniquifyArray() { }
 
 
 
 // Iteration #6: Find elements
 const wordsFind = ['machine', 'subset', 'trouble', 'starting', 'matter', 'eating', 'truth', 'disobedience'];
 
-function doesWordExist() {}
+function doesWordExist() { }
 
 
 
@@ -143,7 +144,7 @@ const wordsCount = [
   'matter'
 ];
 
-function howManyTimes() {}
+function howManyTimes() { }
 
 
 
@@ -171,7 +172,7 @@ const matrix = [
   [1, 70, 54, 71, 83, 51, 54, 69, 16, 92, 33, 48, 61, 43, 52, 1, 89, 19, 67, 48]
 ];
 
-function greatestProduct() {}
+function greatestProduct() { }
 
 
 
