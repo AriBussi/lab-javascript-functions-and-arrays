@@ -7,7 +7,7 @@ function maxOfTwoNumbers(a, b) {
   }
 }
 
-console.log('Iteration 1', maxOfTwoNumbers(5, 5));
+console.log('Iteration 1 --', maxOfTwoNumbers(5, 5));
 
 
 
@@ -26,13 +26,22 @@ function findLongestWord(wordsArr) {
   return longest;
 }
 
-console.log('Iteration 2', findLongestWord(words));
+console.log('Iteration 2 --', findLongestWord(words));
 
 // Iteration #3: Calculate the sum
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
-function sumNumbers() {}
+function sumNumbers(nums) {
+  let sum = 0;
 
+  for (let num in nums) {
+    sum += numbers[num];
+  }
+
+  return sum;
+}
+
+console.log('Iteration 3 --', sumNumbers(numbers));
 
 
 // Iteration #3.1 Bonus:
