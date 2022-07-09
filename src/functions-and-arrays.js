@@ -7,16 +7,26 @@ function maxOfTwoNumbers(a, b) {
   }
 }
 
-console.log(maxOfTwoNumbers(5, 5));
+console.log('Iteration 1', maxOfTwoNumbers(5, 5));
 
 
 
 // Iteration #2: Find longest word
 const words = ['mystery', 'brother', 'aviator', 'crocodile', 'pearl', 'orchard', 'crackpot'];
 
-function findLongestWord() {}
+function findLongestWord(wordsArr) {
+  let longest = '';
 
+  wordsArr.forEach(function(word) {
+    if(word.length > longest.length) {
+      longest = word;
+    }
+  })
 
+  return longest;
+}
+
+console.log('Iteration 2', findLongestWord(words));
 
 // Iteration #3: Calculate the sum
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
