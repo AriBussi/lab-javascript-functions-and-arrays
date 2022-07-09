@@ -88,11 +88,20 @@ function averageWordLength(words) {
   return suma / words.length;
  }
 
- console.log('Numbers average --', averageWordLength(wordsArr));
+ console.log('String average --', averageWordLength(wordsArr));
 
 // Bonus - Iteration #4.1
-function avg() {}
 
+/* 
+  My string average solution seems to be the generic average solution already 
+  I'm leaving both of them to pass the tests
+*/
+
+function avg(arr) {
+  return averageWordLength(arr)
+}
+
+console.log('Generic average --', avg(mixedArr));
 // Iteration #5: Unique arrays
 const wordsUnique = [
   'crab',
