@@ -41,11 +41,29 @@ function sumNumbers(nums) {
   return sum;
 }
 
-console.log('Iteration 3 --', sumNumbers(numbers));
+console.log('Iteration 3.0 --', sumNumbers(numbers));
+
+
 
 
 // Iteration #3.1 Bonus:
-function sum() {}
+const mixedArr = [6, 12, 'miami', 1, true, 'barca', '200', 'lisboa', 8, 10];
+
+function sum(arr) {
+  let sum = 0;
+
+  arr.forEach(function(element) {
+    if (typeof element === 'string') {
+      sum += element.length;
+    } else {
+      sum += element;
+    }
+  });
+
+  return sum;
+}
+
+console.log('Iteration 3.1 --', sum(mixedArr));
 
 
 
