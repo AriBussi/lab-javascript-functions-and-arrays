@@ -118,9 +118,19 @@ const wordsUnique = [
   'bring'
 ];
 
-function uniquifyArray() { }
+function uniquifyArray(arr) {
+  const uniques = [];
 
+  arr.forEach(function(element) {
+    if (uniques.indexOf(element) === -1) {
+      uniques.push(element);
+    }
+  })
 
+  return uniques;
+ }
+
+console.log('GUnique arrays --', uniquifyArray(wordsUnique));
 
 // Iteration #6: Find elements
 const wordsFind = ['machine', 'subset', 'trouble', 'starting', 'matter', 'eating', 'truth', 'disobedience'];
