@@ -165,9 +165,12 @@ const wordsCount = [
   'matter'
 ];
 
-function howManyTimes() { }
+function howManyTimes(arr, word) {
+  const appearances = arr.filter(element => element === word);
+  return appearances.length;
+ }
 
-
+ console.log('Count repetition --', howManyTimes(wordsCount, 'trouble'));
 
 // Iteration #8: Bonus
 const matrix = [
