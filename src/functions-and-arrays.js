@@ -130,13 +130,24 @@ function uniquifyArray(arr) {
   return uniques;
  }
 
-console.log('GUnique arrays --', uniquifyArray(wordsUnique));
+console.log('Unique arrays --', uniquifyArray(wordsUnique));
 
 // Iteration #6: Find elements
 const wordsFind = ['machine', 'subset', 'trouble', 'starting', 'matter', 'eating', 'truth', 'disobedience'];
 
-function doesWordExist() { }
+function doesWordExist(arr, word) {
+  let exists = false;
 
+  arr.forEach(function(element) {
+    if(element === word) {
+      exists = true;
+    }
+  })
+
+  return exists;
+ }
+
+ console.log('Find elements --', doesWordExist(wordsFind, 'trouble'));
 
 
 // Iteration #7: Count repetition
